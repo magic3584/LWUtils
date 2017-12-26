@@ -12,6 +12,12 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        LWLocationManager.shared.getAddress { (mark) in
+            if let city = mark.locality {
+                print(city)
+            }
+        }
+        
         // Do any additional setup after loading the view, typically from a nib.
     }
 

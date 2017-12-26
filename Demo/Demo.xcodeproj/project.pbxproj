@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21688BE91FF1DC0400E0EB24 /* LWLocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21688BE81FF1DC0400E0EB24 /* LWLocationManager.swift */; };
 		218DC0661FF0E2F000AB2D58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DC0651FF0E2F000AB2D58 /* AppDelegate.swift */; };
 		218DC0681FF0E2F000AB2D58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 218DC0671FF0E2F000AB2D58 /* ViewController.swift */; };
 		218DC06B1FF0E2F000AB2D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 218DC0691FF0E2F000AB2D58 /* Main.storyboard */; };
@@ -18,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21688BE81FF1DC0400E0EB24 /* LWLocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LWLocationManager.swift; sourceTree = "<group>"; };
 		218DC0621FF0E2F000AB2D58 /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		218DC0651FF0E2F000AB2D58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		218DC0671FF0E2F000AB2D58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 				218DC07A1FF0E57C00AB2D58 /* LWValidate.swift */,
 				218DC07C1FF0E61A00AB2D58 /* LWDate.swift */,
 				218DC07E1FF0E6A900AB2D58 /* UIApplication+LWUtils.swift */,
+				21688BE81FF1DC0400E0EB24 /* LWLocationManager.swift */,
 			);
 			path = LWUtils;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 				218DC07D1FF0E61A00AB2D58 /* LWDate.swift in Sources */,
 				218DC07B1FF0E57C00AB2D58 /* LWValidate.swift in Sources */,
 				218DC07F1FF0E6A900AB2D58 /* UIApplication+LWUtils.swift in Sources */,
+				21688BE91FF1DC0400E0EB24 /* LWLocationManager.swift in Sources */,
 				218DC0681FF0E2F000AB2D58 /* ViewController.swift in Sources */,
 				218DC0661FF0E2F000AB2D58 /* AppDelegate.swift in Sources */,
 			);
@@ -297,6 +301,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2R55J8C7W;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugick.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -312,6 +317,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A2R55J8C7W;
 				INFOPLIST_FILE = Demo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lugick.Demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
