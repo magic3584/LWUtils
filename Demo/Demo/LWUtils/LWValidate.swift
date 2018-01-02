@@ -20,10 +20,4 @@ open class LWValidate {
         let emailTest = NSPredicate(format: "SELF MATCHES %@", emailRegex)
         return emailTest.evaluate(with: email)
     }
-    
-    public class func isFloat(_ str: String) -> Bool {
-        let regex = "^(?:\\d+(?:\\.\\d*)?|\\.\\d+)$"
-        let test = NSPredicate(format:"SELF MATCHES %@", regex)
-        return test.evaluate(with: regex)
-    }
 }

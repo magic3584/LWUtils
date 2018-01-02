@@ -24,6 +24,7 @@ open class LWLocationManager: NSObject, CLLocationManagerDelegate {
     public func getAddress(handler: @escaping (CLPlacemark) -> ()) {
         self.handler = handler
         manager.requestWhenInUseAuthorization()
+        manager.startUpdatingLocation()
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
