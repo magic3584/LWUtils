@@ -15,6 +15,7 @@ open class LWLocationManager: NSObject, CLLocationManagerDelegate {
     let geoCoder = CLGeocoder()
     
     var handler: ((CLPlacemark) -> ())?
+    var coordinateHandler: ((CLPlacemark) -> ())?
     
     override init() {
         super.init()
@@ -25,6 +26,15 @@ open class LWLocationManager: NSObject, CLLocationManagerDelegate {
         self.handler = handler
         manager.requestWhenInUseAuthorization()
         manager.startUpdatingLocation()
+    }
+    
+    public func getCoordinateBy(address: String, handler: @escaping (CLPlacemark) -> ()) {
+        self.coordinateHandler = handler
+        CLGeocoder().geocodeAddressString(address) { (placemarks, error) in
+            if let placemark = placemarks?.first {
+                self.coordinateHandler?(placemark)
+            }
+        }
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {

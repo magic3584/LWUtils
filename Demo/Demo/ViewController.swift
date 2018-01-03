@@ -23,6 +23,12 @@ class ViewController: UIViewController {
                 print(city)
             }
         }
+        
+        LWLocationManager.shared.getCoordinateBy(address: "北京") { (mark) in
+            if let location = mark.location {
+                print(location.coordinate)
+            }
+        }
     }
 
     override func didReceiveMemoryWarning() {
